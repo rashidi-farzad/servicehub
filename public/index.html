@@ -6,19 +6,14 @@
     <link rel="stylesheet" href="/public/styles/main.css" />
     <title>سرویس کار | مرجع خدمات منزل و متخصصین</title>
   </head>
-  <body class="font-vazir bg-[#F4F6FB]">
-    <!-- Start Header -->
-    <div id="site-header">
-      <header class="container">
-        <nav class="flex items-center justify-between">
+  <body class="font-vazir">
+    <header class="mt-5">
+      <nav class="container">
+        <div class="flex justify-between items-center text-lg">
           <!-- Right Navbar -->
-          <div>
-            <!-- logo -->
-            <a href="#"></a>
-            <!-- menu -->
-            <ul
-              class="flex items-center text-lg gap-x-6 text-gray-500 child:hover:text-gray-700 child:hover:bg-gray-200/50 child:py-2 child:px-3 child:hover:rounded-xl child:transition-all"
-            >
+          <div class="flex items-center gap-x-5">
+            <a href="#" class="text-2xl font-vazir-semibold">سرویس هاب</a>
+            <ul class="flex items-center gap-x-5 text-gray-700">
               <li>
                 <a href="#">خانه</a>
               </li>
@@ -34,47 +29,44 @@
             </ul>
           </div>
           <!-- Left Navbar -->
-          <div
-            class="font-vazir-medium flex items-center gap-x-5 child:px-4 child:py-2"
-          >
-            <a href="#">ورود</a>
-            <a href="#" class="text-primary">ثبت نام</a>
+          <div class="font-vazir-medium">
+            <a href="#" class="py-2 px-4 border border-black/30 rounded-lg"
+              >ورود | ثبت نام</a
+            >
           </div>
-        </nav>
-      </header>
-    </div>
-    <!-- Finish Header -->
-
-    <!-- Start Main -->
+        </div>
+      </nav>
+    </header>
     <main>
-      <section id="hero-section" class="bg-blue-300/50 py-20">
+      <!-- Hero Section -->
+      <section
+        id="hero-section"
+        class="bg-linear-to-r from-green-500 to-green-700 mt-5"
+      >
         <div class="container">
           <div
             id="hero-content-wrapper"
-            class="flex items-center justify-center flex-col gap-y-5"
+            class="flex flex-col gap-y-5 justify-center items-center text-white py-18"
           >
             <h1 class="text-[40px] font-vazir-black">
-              متخصصین مطمئن را در چند دقیقه پیدا کنید
+              متخصصان مطمئن را در چند دقیقه پیدا کنید
             </h1>
             <h2 class="font-vazir-medium">
               از نظافت و تعمیرات تا برقکاری و تدریس؛ متخصصان تأییدشده را مقایسه
               کنید و آنلاین رزرو کنید.
             </h2>
-            <!-- Hero SelectBoxes -->
-            <div class="flex items-center gap-x-5 child:py-3 child:px-6">
+            <div>
               <select>
                 <option value="default">همه دسته بندی ها</option>
               </select>
               <select>
                 <option value="default">همه شهر ها</option>
               </select>
-              <button class="bg-amber-400 rounded-lg cursor-pointer">
-                جستجوی خدمات
-              </button>
+              <button>جستجو در سرویس هاب</button>
             </div>
             <!-- Hero Site Infos -->
             <div
-              class="flex items-center gap-x-8 child:flex child:flex-col child:justify-center child:text-center"
+              class="flex gap-x-5 child:flex child:flex-col child:text-center"
             >
               <div>
                 <span>۱۲٬۵۰۰+</span>
@@ -93,39 +85,356 @@
         </div>
       </section>
 
-      <section id="popular-categories">
+      <!-- Popular Categories -->
+      <section id="popular-categories-wrapper" class="mt-5">
         <div class="container">
-          <h3>دسته‌بندی‌های پرطرفدار</h3>
-          <h4>خدمت مورد نیازتان را انتخاب کنید</h4>
-          <div class="grid grid-cols-4 grid-rows-2 gap-4 place-items-center">
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
-            <div>تعمیر لوازم خانگی</div>
+          <div class="mb-5">
+            <h3 class="font-vazir-bold">دسته‌بندی‌های پرطرفدار</h3>
+            <h4 class="font-vazir-medium">
+              خدمات مورد نیازتان را انتخاب کنید:
+            </h4>
+          </div>
+          <div class="grid grid-rows-2 grid-cols-4 place-items-center">
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
+            <div>
+              <span>تعمیر لوازم خانگی</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="special-services">
+      <!-- Special Services -->
+      <section id="special-services" class="mt-5">
         <div class="container">
-          <h3>خدمات ویژه</h3>
-          <h4>پرفروش‌ترین خدمات این هفته</h4>
-          <a
-            id="slide-item"
-            class="flex w-[266px] h-[303px] rounded-tr-2xl rounded-tl-2xl"
+          <div class="mb-5">
+            <h3 class="font-vazir-bold">خدمات ویژه</h3>
+            <h4 class="font-vazir-medium">پرفروش‌ترین خدمات این هفته:</h4>
+          </div>
+          <div class="flex justify-between">
+            <a href="#" class="w-[300px] h-[300px]">
+              <!-- Card Image -->
+              <div class="bg-red-500 h-[45%]"></div>
+              <!-- Card Body -->
+              <div class="p-3">
+                <h4>تعمیر یخچال و فریزر در محل</h4>
+                <span>علی‌رضا محمدی · تهران</span>
+                <!-- Rating And Time -->
+                <div class="flex justify-between">
+                  <span>4.9</span>
+                  <span>2 ساعت</span>
+                </div>
+                <span>از ۴۵۰٬۰۰۰ تومان</span>
+              </div>
+            </a>
+            <a href="#" class="w-[300px] h-[300px]">
+              <!-- Card Image -->
+              <div class="bg-red-500 h-[45%]"></div>
+              <!-- Card Body -->
+              <div class="p-3">
+                <h4>تعمیر یخچال و فریزر در محل</h4>
+                <span>علی‌رضا محمدی · تهران</span>
+                <!-- Rating And Time -->
+                <div class="flex justify-between">
+                  <span>4.9</span>
+                  <span>2 ساعت</span>
+                </div>
+                <span>از ۴۵۰٬۰۰۰ تومان</span>
+              </div>
+            </a>
+            <a href="#" class="w-[300px] h-[300px]">
+              <!-- Card Image -->
+              <div class="bg-red-500 h-[45%]"></div>
+              <!-- Card Body -->
+              <div class="p-3">
+                <h4>تعمیر یخچال و فریزر در محل</h4>
+                <span>علی‌رضا محمدی · تهران</span>
+                <!-- Rating And Time -->
+                <div class="flex justify-between">
+                  <span>4.9</span>
+                  <span>2 ساعت</span>
+                </div>
+                <span>از ۴۵۰٬۰۰۰ تومان</span>
+              </div>
+            </a>
+            <a href="#" class="w-[300px] h-[300px]">
+              <!-- Card Image -->
+              <div class="bg-red-500 h-[45%]"></div>
+              <!-- Card Body -->
+              <div class="p-3">
+                <h4>تعمیر یخچال و فریزر در محل</h4>
+                <span>علی‌رضا محمدی · تهران</span>
+                <!-- Rating And Time -->
+                <div class="flex justify-between">
+                  <span>4.9</span>
+                  <span>2 ساعت</span>
+                </div>
+                <span>از ۴۵۰٬۰۰۰ تومان</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommended Specialists -->
+      <section id="recomended-specialists">
+        <div class="container">
+          <div class="mb-5">
+            <h3 class="font-vazir-bold">متخصصان پیشنهادی</h3>
+            <h4 class="font-vazir-medium">
+              با بالاترین امتیاز و رضایت مشتریان
+            </h4>
+          </div>
+          <a href="#" class="flex justify-end">همه متخصصان</a>
+          <div
+            id="specialist-cards-wrapper"
+            class="flex justify-between items-center"
           >
-            <!-- top slide item -->
-            <div class=""></div>
-            <!-- Body slide item -->
-            <div></div>
-          </a>
+            <a
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30"
+            >
+              <!-- Specialist Photo And Name -->
+              <div>
+                <!-- Specialist Photo -->
+                <div></div>
+                <!-- Specialist Details -->
+                <div class="flex flex-col">
+                  <span>علی‌رضا محمدی</span>
+                  <span>تعمیرکار لوازم خانگی</span>
+                </div>
+              </div>
+              <!-- Specialist Infos -->
+              <div class="flex justify-between items-center">
+                <span>★ ۴.۹</span>
+                <span>۸ سال سابقه</span>
+                <span>📍 تهران</span>
+              </div>
+            </a>
+            <a
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30"
+            >
+              <!-- Specialist Photo And Name -->
+              <div>
+                <!-- Specialist Photo -->
+                <div></div>
+                <!-- Specialist Details -->
+                <div class="flex flex-col">
+                  <span>علی‌رضا محمدی</span>
+                  <span>تعمیرکار لوازم خانگی</span>
+                </div>
+              </div>
+              <!-- Specialist Infos -->
+              <div class="flex justify-between items-center">
+                <span>★ ۴.۹</span>
+                <span>۸ سال سابقه</span>
+                <span>📍 تهران</span>
+              </div>
+            </a>
+            <a
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30"
+            >
+              <!-- Specialist Photo And Name -->
+              <div>
+                <!-- Specialist Photo -->
+                <div></div>
+                <!-- Specialist Details -->
+                <div class="flex flex-col">
+                  <span>علی‌رضا محمدی</span>
+                  <span>تعمیرکار لوازم خانگی</span>
+                </div>
+              </div>
+              <!-- Specialist Infos -->
+              <div class="flex justify-between items-center">
+                <span>★ ۴.۹</span>
+                <span>۸ سال سابقه</span>
+                <span>📍 تهران</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ServiceHub Guidelines -->
+      <section id="guidelines" class="mt-5">
+        <div class="container">
+          <div class="mb-5">
+            <h3 class="font-vazir-bold">سرویس‌هاب چطور کار می‌کند؟</h3>
+            <h4 class="font-vazir-medium">در چهار قدم ساده</h4>
+          </div>
+          <div id="guidline-wrapper" class="flex justify-between items-center">
+            <div
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30 flex flex-col justify-center items-center"
+            >
+              <span>1</span>
+              <span>جستجو</span>
+              <span>خدمت و شهرتان را انتخاب کنید </span>
+            </div>
+            <div
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30 flex flex-col justify-center items-center"
+            >
+              <span>1</span>
+              <span>جستجو</span>
+              <span>خدمت و شهرتان را انتخاب کنید </span>
+            </div>
+            <div
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30 flex flex-col justify-center items-center"
+            >
+              <span>1</span>
+              <span>جستجو</span>
+              <span>خدمت و شهرتان را انتخاب کنید </span>
+            </div>
+            <div
+              href="#"
+              id="specialist-card"
+              class="w-[360px] border border-black/30 flex flex-col justify-center items-center"
+            >
+              <span>1</span>
+              <span>جستجو</span>
+              <span>خدمت و شهرتان را انتخاب کنید </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why ServiceHub -->
+      <section id="why-servicehub" class="mt-5">
+        <div class="container">
+          <div class="mb-5">
+            <h3 class="font-vazir-bold">چرا سرویس‌هاب؟</h3>
+            <h4 class="font-vazir-medium">اعتماد، شفافیت و کیفیت</h4>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex flex-col justify-center items-center">
+              <span>✅</span>
+              <span>متخصصان تأییدشده</span>
+              <span>هویت و سوابق همه متخصصان بررسی می‌شود.</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <span>✅</span>
+              <span>متخصصان تأییدشده</span>
+              <span>هویت و سوابق همه متخصصان بررسی می‌شود.</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <span>✅</span>
+              <span>متخصصان تأییدشده</span>
+              <span>هویت و سوابق همه متخصصان بررسی می‌شود.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Comments -->
+      <section id="customer-comments" class="mt-5">
+        <div class="container">
+          <div class="mb-5">
+            <h3 class="font-vazir-bold">مشتریان چه می‌گویند</h3>
+            <h4 class="font-vazir-medium">تجربه واقعی کاربران ما</h4>
+          </div>
+          <div id="comment-card-wrapper" class="flex justify-between">
+            <div id="comment-card" class="w-[360px] border border-black/30">
+              <div>
+                <span>فاطمه صادقی</span>
+                <span>★★★★★</span>
+              </div>
+              <span
+                >کار تمیز و به‌موقع انجام شد. حتماً دوباره رزرو می‌کنم.
+              </span>
+            </div>
+            <div id="comment-card" class="w-[360px] border border-black/30">
+              <div>
+                <span>فاطمه صادقی</span>
+                <span>★★★★★</span>
+              </div>
+              <span
+                >کار تمیز و به‌موقع انجام شد. حتماً دوباره رزرو می‌کنم.
+              </span>
+            </div>
+            <div id="comment-card" class="w-[360px] border border-black/30">
+              <div>
+                <span>فاطمه صادقی</span>
+                <span>★★★★★</span>
+              </div>
+              <span
+                >کار تمیز و به‌موقع انجام شد. حتماً دوباره رزرو می‌کنم.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join As a Specialist -->
+      <section class="mt-5">
+        <div class="container">
+          <div id="banner-wrapper" class="flex justify-between items-center">
+            <div>
+              <h3>متخصص هستید؟ به ما بپیوندید</h3>
+              <h4>
+                پروفایل بسازید، خدماتتان را منتشر کنید و مشتری جدید بگیرید.
+              </h4>
+            </div>
+            <a href="#">ثبت‌نام به‌عنوان متخصص</a>
+          </div>
         </div>
       </section>
     </main>
-    <!-- Finish Main -->
+    <footer class="mt-5">
+      <div class="container">
+        <div id="footer-wrapper" class="flex justify-between items-center">
+          <div>
+            <h4>سرویس‌هاب</h4>
+            <p>بازار آنلاین خدمات؛ پیدا کردن متخصص مطمئن، بدون دردسر.</p>
+          </div>
+          <div>
+            <h4>خدمات</h4>
+            <a href="#">نظافت منزل</a>
+            <a href="#">تعمیرات</a>
+            <a href="#">برقکاری</a>
+          </div>
+          <div>
+            <h4>شرکت</h4>
+            <a href="#">درباره ما</a>
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">تماس با ما</a>
+          </div>
+          <div>
+            <h4>پشتیبانی</h4>
+            <a href="#">۰۲۱-۸۸۱۲۳۴۵۶</a>
+            <a href="#">support@servicehub.ir</a>
+          </div>
+        </div>
+        <p class="text-center">© ۱۴۰۵ سرویس‌هاب. همه حقوق محفوظ است.</p>
+      </div>
+    </footer>
   </body>
 </html>
