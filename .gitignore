@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 watch.txt
+=======
+/frontend/node_modules
+/backend/node_modules
+
+/backend/.env
+>>>>>>> a0d6afa1e3055d8c862bb839b099457475db9a6d
