@@ -2,32 +2,37 @@
 
 @font-face {
   font-family: "Vazirmatn";
-  src: url("/public/assets/fonts/Vazirmatn-Regular.woff2") format("woff2");
+  src: url("/frontend/public/assets/fonts/Vazirmatn-Regular.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-family: "Vazirmatn-Light";
-  src: url("/public/assets/fonts/Vazirmatn-Light.woff2") format("woff2");
+  src: url("/frontend/public/assets/fonts/Vazirmatn-Light.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-family: "Vazirmatn-Medium";
-  src: url("/public/assets/fonts/Vazirmatn-Medium.woff2") format("woff2");
+  src: url("/frontend/public/assets/fonts/Vazirmatn-Medium.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-family: "Vazirmatn-SemiBold";
-  src: url("/public/assets/fonts/Vazirmatn-SemiBold.woff2") format("woff2");
+  src: url("/frontend/public/assets/fonts/Vazirmatn-SemiBold.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-family: "Vazirmatn-Bold";
-  src: url("/public/assets/fonts/Vazirmatn-Bold.woff2") format("woff2");
+  src: url("/frontend/public/assets/fonts/Vazirmatn-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Vazirmatn-Black";
-  src: url("/public/assets/fonts/Vazirmatn-Black.woff2") format("woff2");
+  src: url("/frontend/public/assets/fonts/Vazirmatn-Black.woff2")
+    format("woff2");
 }
 
 @theme {
