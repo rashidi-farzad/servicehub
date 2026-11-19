@@ -19,7 +19,7 @@ export const register = async (data) => {
     address: data.address,
   });
 
-  const userObject = user.userObject();
+  const userObject = user.toObject();
   delete userObject.password;
 
   return userObject;
