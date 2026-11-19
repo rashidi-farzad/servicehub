@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/frontend/public/styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-vazir min-h-screen bg-slate-50 text-slate-800 antialiased">
+    <header
+      class="sticky top-0 z-50 mt-0 border-b border-slate-200/80 bg-white/95 backdrop-blur-md"
+    >
+      <nav class="container mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <div
+          class="flex justify-between items-center flex-col gap-4 text-base md:flex-row md:items-center md:justify-between md:text-sm lg:text-base"
+        >
+          <!-- Right Navbar -->
+          <div
+            class="flex items-center gap-x-7 flex-col gap-4 sm:flex-row sm:gap-7"
+          >
+            <a
+              class="text-2xl font-vazir-semibold tracking-tight text-slate-900 transition-colors hover:text-emerald-700"
+              href="/frontend/public/index.html"
+              >سرویس هاب</a
+            >
+            <ul
+              class="flex items-center gap-x-2 flex-wrap justify-center gap-1 text-sm text-slate-600 sm:gap-2"
+            >
+              <li class="">
+                <a
+                  class="inline-flex rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-emerald-50 hover:text-emerald-700"
+                  href="#"
+                  >خانه</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="inline-flex rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-emerald-50 hover:text-emerald-700"
+                  href="#"
+                  >خدمات</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="inline-flex rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-emerald-50 hover:text-emerald-700"
+                  href="#"
+                  >متخصصان</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="inline-flex rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-emerald-50 hover:text-emerald-700"
+                  href="#"
+                  >ارتباط با ما</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Left Navbar -->
+          <div class="font-vazir-medium">
+            <a
+              class="border inline-flex items-center justify-center rounded-xl border-emerald-600 px-5 py-2.5 text-sm font-vazir-medium text-emerald-700 transition-all duration-200 hover:bg-emerald-600 hover:text-white"
+              href="#"
+              >ورود | ثبت نام</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="my-7.5">
+      <div class="container">
+        <div
+          id="register-form-wrapper"
+          class="border flex justify-center items-center rounded-xl max-w-[440px] mx-auto my-7.5 p-7.5 border-black/30 shadow-sm shadow-slate-900/[0.03] transition-all duration-300 hover:-translate-y-1"
+        >
+          <form class="flex flex-col w-full">
+            <h1 class="text-2xl font-vazir-bold mb-1">ایجاد حساب کاربری</h1>
+            <div
+              id="tabs"
+              class="border flex child:basis-[50%] my-4 p-1 child:p-2 child:font-vazir-bold text-center rounded-xl child:rounded-lg child:cursor-pointer"
+            >
+              <button>مشتری</button>
+              <button>متخصص</button>
+            </div>
+            <div id="user-infos">
+              <!-- User Full Name -->
+              <div class="flex flex-col my-3.5">
+                <label class="mb-1 font-vazir-semibold"
+                  >نام و نام خانوادگی
+                </label>
+                <input
+                  class="px-3 py-2.5 border border-black/50 rounded-xl outline-none"
+                  type="text"
+                  placeholder="مثلا فرزاد رشیدی"
+                />
+              </div>
+              <!-- User Phone Number -->
+              <div class="flex flex-col my-3.5">
+                <label class="mb-1 font-vazir-semibold">شماره موبایل</label>
+                <input
+                  class="px-3 py-2.5 border border-black/50 rounded-xl outline-none"
+                  type="text"
+                  placeholder="۰۹۱۲۳۴۵۶۷۸۹"
+                  inputmode="numeric"
+                />
+              </div>
+              <!-- User Expert -->
+              <div class="flex flex-col my-3.5">
+                <label class="mb-1 font-vazir-semibold">تخصص شما</label>
+                <input
+                  class="px-3 py-2.5 border border-black/50 rounded-xl outline-none"
+                  type="text"
+                  placeholder="مثلا برقکار"
+                />
+              </div>
+              <!-- User Password -->
+              <div class="flex flex-col my-3.5">
+                <label class="mb-1 font-vazir-semibold">رمز عبور</label>
+                <input
+                  class="px-3 py-2.5 border border-black/50 rounded-xl outline-none"
+                  type="password"
+                  placeholder="••••••••"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="mt-4 px-6.5 py-3.5 border border-emerald-600 text-emerald-700 transition-all duration-200 hover:bg-emerald-600 hover:text-white rounded-xl cursor-pointer"
+            >
+              ثبت نام
+            </button>
+            <div class="text-center mt-4 text-sm">
+              <span>قبلاً ثبت‌نام کرده‌اید؟</span>
+              <a href="./login.html" class="font-vazir-medium">ورود</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-0 border-t border-slate-200 bg-white py-10 sm:py-12">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex justify-between items-center mb-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          id="footer-wrapper"
+        >
+          <div class="flex flex-col items-start gap-3">
+            <h4 class="mb-1 font-vazir-bold text-slate-900">سرویس‌هاب</h4>
+            <p class="max-w-xs text-sm leading-7 text-slate-500">
+              بازار آنلاین خدمات؛ پیدا کردن متخصص مطمئن، بدون دردسر.
+            </p>
+          </div>
+          <div class="flex flex-col items-start gap-3">
+            <h4 class="mb-1 font-vazir-bold text-slate-900">خدمات</h4>
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >نظافت منزل</a
+            >
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >تعمیرات</a
+            >
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >برقکاری</a
+            >
+          </div>
+          <div class="flex flex-col items-start gap-3">
+            <h4 class="mb-1 font-vazir-bold text-slate-900">شرکت</h4>
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >درباره ما</a
+            >
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >قوانین و مقررات</a
+            >
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >تماس با ما</a
+            >
+          </div>
+          <div class="flex flex-col items-start gap-3">
+            <h4 class="mb-1 font-vazir-bold text-slate-900">پشتیبانی</h4>
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >۰۲۱-۸۸۱۲۳۴۵۶</a
+            >
+            <a
+              class="text-sm text-slate-500 transition-colors hover:text-emerald-700"
+              href="#"
+              >support@servicehub.ir</a
+            >
+          </div>
+        </div>
+        <p
+          class="text-center border-t border-slate-100 pt-6 text-xs text-slate-400 sm:text-sm"
+        >
+          © ۱۴۰۵ سرویس‌هاب. همه حقوق محفوظ است.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
