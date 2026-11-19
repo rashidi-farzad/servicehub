@@ -1,8 +1,9 @@
 import userModel from "../users/user.model.js";
 
 export const register = async (data) => {
+  const { fullName, email, phone, password, confirmPassword } = data;
   const existsUser = await userModel.findOne({
-    $or: [{ email: data.email }, { phone: data.phone }],
+    $or: [{ email }, { phone }],
   });
 
   if (existsUser) {
@@ -12,11 +13,11 @@ export const register = async (data) => {
   }
 
   const user = await userModel.create({
-    fullName: data.fullName,
-    email: data.email,
-    phone: data.phone,
-    password: data.password,
-    address: data.address,
+    fullName,
+    email,
+    phone,
+    password,
+    confirmPassword,
   });
 
   const userObject = user.toObject();
