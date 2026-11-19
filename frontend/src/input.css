@@ -1,54 +1,29 @@
+/* ServiceHub — Tailwind CSS v4 entry file.
+   Build:  npx @tailwindcss/cli -i ./src/input.css -o ./styles/main.css --watch */
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;900&display=swap");
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Vazirmatn";
-  src: url("/frontend/public/assets/fonts/Vazirmatn-Regular.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Vazirmatn-Light";
-  src: url("/frontend/public/assets/fonts/Vazirmatn-Light.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Vazirmatn-Medium";
-  src: url("/frontend/public/assets/fonts/Vazirmatn-Medium.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Vazirmatn-SemiBold";
-  src: url("/frontend/public/assets/fonts/Vazirmatn-SemiBold.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Vazirmatn-Bold";
-  src: url("/frontend/public/assets/fonts/Vazirmatn-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Vazirmatn-Black";
-  src: url("/frontend/public/assets/fonts/Vazirmatn-Black.woff2")
-    format("woff2");
-}
-
 @theme {
-  --font-vazir: "Vazirmatn";
-  --font-vazir-light: "Vazirmatn-Light";
-  --font-vazir-medium: "Vazirmatn-Medium";
-  --font-vazir-bold: "Vazirmatn-Bold";
-  --font-vazir-semibold: "Vazirmatn-SemiBold";
-  --font-vazir-black: "Vazirmatn-Black";
-  /* Colors */
+  --font-vazir: "Vazirmatn", "Vazir", Tahoma, system-ui, sans-serif;
 }
 
+/* Weighted Vazirmatn helpers used across all pages (font-vazir sets family, weight 400) */
+@utility font-vazir-medium {
+  font-family: var(--font-vazir);
+  font-weight: 500;
+}
+@utility font-vazir-semibold {
+  font-family: var(--font-vazir);
+  font-weight: 600;
+}
+@utility font-vazir-bold {
+  font-family: var(--font-vazir);
+  font-weight: 700;
+}
+@utility font-vazir-black {
+  font-family: var(--font-vazir);
+  font-weight: 900;
+}
+
+/* Direct-children variant used in index.html (child:flex ...) */
 @custom-variant child (& > *);
-
-@utility container {
-  margin-inline: auto;
-  padding-inline: 1rem;
-  max-width: 1440px;
-}
