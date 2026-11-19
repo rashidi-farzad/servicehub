@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import argon2 from "argon2";
 
-const schema = new mongoose.schema(
+const schema = new mongoose.Schema(
   {
     email: {
       type: String,
@@ -20,6 +20,7 @@ const schema = new mongoose.schema(
     password: {
       type: String,
       required: true,
+      select: false,
     },
     profilePicture: {
       type: String,
