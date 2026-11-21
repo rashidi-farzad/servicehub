@@ -1,4 +1,5 @@
 import userModel from "../users/user.model.js";
+import refreshTokenModel from "./refreshToken.model.js";
 import { generateAccessToken } from "../../utils/generateToken.js";
 
 export const register = async (data) => {
@@ -25,9 +26,11 @@ export const register = async (data) => {
   delete userObject.password;
 
   const accessToken = generateAccessToken(user._id);
+  const refreshToken = refreshTokenModel.createToken(user);
 
   return {
     user: userObject,
     accessToken,
+    refreshToken,
   };
 };
