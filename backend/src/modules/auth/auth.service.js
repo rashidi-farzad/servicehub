@@ -1,4 +1,5 @@
 import userModel from "../users/user.model.js";
+import { generateAccessToken } from "../../utils/generateToken.js";
 
 export const register = async (data) => {
   const { fullName, email, phone, password, confirmPassword } = data;
@@ -23,5 +24,10 @@ export const register = async (data) => {
   const userObject = user.toObject();
   delete userObject.password;
 
-  return userObject;
+  const accessToken = generateAccessToken(user._id);
+
+  return {
+    user: userObject,
+    accessToken,
+  };
 };

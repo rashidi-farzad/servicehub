@@ -1,4 +1,5 @@
 import express from "express";
+import cookieParser from "cookie-parser";
 import errorHandler from "./middlewares/errorHandler.js";
 import corsConfig from "./config/cors.js";
 import authRoute from "./modules/auth/auth.route.js";
@@ -10,6 +11,7 @@ app.use(corsConfig);
 //* body parsing config
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ limit: "20mb", extended: true }));
+app.use(cookieParser());
 
 //! routes
 app.use("/auth", authRoute);
